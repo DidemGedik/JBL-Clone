@@ -1,0 +1,14 @@
+@import "./variables";
+.about {
+  &-data {
+    text-align: center;
+  }
+  &-img {
+    width: 280px;
+    justify-self: center;
+    //justify self grid yapısı içerisindeki elemanları yatayda hizalamak için kullanılır. center start gibi degerleri var
+  }
+  .button {
+    margin: 30px;
+  }
+}

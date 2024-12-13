@@ -1,0 +1,13 @@
+//responsive tasarım noktasında css yapıları çokça kullanılır. bu özellik belrli ekran boyutlarını isimlendirip bu ekran boyutlarında ilgili elemanın nasıl bir stile sahip olması gerektiğini belirleme yeteneği sunar.
+//mixin yapıları tanımlanırken @mixin yazılarak bu yapıya bir isim verilir. sonrasında süslü parantez içerisinde medya sorgusu yazılarak  (ör: max-width:1000px) bu ekran boyutu ile yapısı eşlenir. son olarak eleman içerisinde yazılacak css kodlarını karşılaması için @content yazılır.
+//kullanırken @include yazılıp mixine verilen isimden sonra süslü parantez açılıp gerekli css kodları kodlaması yapılır.
+@mixin laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
